@@ -1,0 +1,69 @@
+#main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: auto;
+}
+
+img {
+  width: 10vw;
+  height: auto;
+}
+
+header {
+  width: 90vw;
+  background-color: grey;
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 0rem;
+}
+
+#body {
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-image: url(../public/images/pokemon_bg.jpg);
+  background-size: contain;
+}
+
+#overlay {
+  position: fixed; /* Sit on top of the page content */
+  display: flex; /* Hidden by default */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.pokemon-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  font-weight: 900;
+  background-color: white;
+}
+
+.modal {
+  width: 40vw;
+  height: 30vh;
+  border: 5px solid black;
+  background-color: whitesmoke;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+  font-size: 2rem;
+  font-weight: 900;
+}
